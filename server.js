@@ -60,6 +60,13 @@ res.render('about.hbs', {
   pageTitle: 'About Page',
   currentYear: new Date().getFullYear()
 });
+
+
+app.get('/projects', (req, res) => {
+res.render('about.hbs', {
+  pageTitle: 'Portfolio Page',
+  currentYear: new Date().getFullYear()
+});
 })
 app.listen(port, () => {
   console.log(`Server started on port ${port}`)
