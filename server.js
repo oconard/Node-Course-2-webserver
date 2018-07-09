@@ -63,7 +63,7 @@ res.render('about.hbs', {
 
 })
 app.get('/projects', (req, res) => {
-res.render('about.hbs', {
+res.render('projects.hbs', {
   pageTitle: 'Portfolio Page',
   currentYear: new Date().getFullYear()
 });
